@@ -138,7 +138,8 @@ $prebuild = 'app/node_modules/node-pty/prebuilds/win32-arm64/pty.node'
 if (Test-Path $prebuild) {
   Write-Host '  node-pty: build/Release <- prebuilds/win32-arm64'
   Copy-Item -Force $prebuild 'app/node_modules/node-pty/build/Release/pty.node'
-  }
+  Copy-Item -Force 'app/node_modules/node-pty/prebuilds/win32-arm64/conpty.dll' 'app/node_modules/node-pty/build/Release/conpty.dll'
+}
 
 # msgpackr-extract has the same build/Release-wins problem: drop the Linux artifact so the
 # loader falls through to the win32-arm64 optional package installed above.
