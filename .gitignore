@@ -1,0 +1,14 @@
+# build outputs and inputs - never commit binaries
+omo-win-build/
+OmO/
+*.AppImage
+*.exe
+*.zip
+*.tgz
+*.msix
+sqfs/
+app/
+arm64-mods/
+electron-arm64/
+omo-package.json
+*.png
