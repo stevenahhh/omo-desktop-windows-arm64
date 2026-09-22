@@ -16,7 +16,7 @@ matching `win32-arm64` Electron release, swap each `linux-x64` native module for
 
 ```powershell
 winget install 7zip.7zip          # only extra dependency
-.\port-omo-win-arm64.ps1 C:\path\to\OmO-0.0.33-x86_64.AppImage
+.\port-omo-win-arm64.ps1
 .\omo-win-build\OmO\OmO.exe
 ```
 
